@@ -41,7 +41,7 @@ Stop the Spring Boot server once testing is complete.
 
 
 ## Program 
-
+```
 simple-web-server/
 ├── src/
 │   └── main/
@@ -52,8 +52,9 @@ simple-web-server/
 │       └── resources/
 │           └── application.properties
 ├── pom.xml
-
+```
  ### Pom.xml
+ ```
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -91,9 +92,9 @@ simple-web-server/
         </plugins>
     </build>
 </project>
-
+```
 ### DemoApplication.java
-
+```
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -105,9 +106,10 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
-
+```
 
 ### HelloController.java
+```
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -121,15 +123,19 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-
+```
 
 ### application.properties:
+```
 
  server.port=8081
 
+```
 
 
+### Output:
 
-Output:
+<img width="1021" height="530" alt="Screenshot 2026-06-10 204331" src="https://github.com/user-attachments/assets/2965b1a0-164a-49ea-9b14-108c0fbea388" />
 
-
+### Result:
+Thus, the development of simple web server using springboot has been completed successfully.
